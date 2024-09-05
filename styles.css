@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.calculator {    
+    border: 1px solid black;
+    height: 60vh;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    height: 8vh;
+    width: 8vh;
+    margin: 5px;
+}
+
+.zero {
+    width: 16vh;
+}
+
+
