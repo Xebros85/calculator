@@ -1,16 +1,18 @@
 // Define Global Variables
 
-let firstNumber;
-let secondNumber;
+const numberButtons = document.querySelectorAll("[data-number]");
+const operatorButtons = document.querySelectorAll("[data-operators]");
+const equalButton = document.querySelector("[data-equals]");
+const clearButton = document.querySelector("[clear-display]");
+const displayBox = document.getElementsByClassName("displayBox");
 
-// Click a number button and display it in the display area
-function showNumber(number) {
+
+function appendDisplay(input) {    
+    displayBox.value += input;
     
-    const displayBox = document.getElementById("display");
-    let num = parseInt(number);
-    displayBox.innerHTML = num;    
+    
 }
 
-// Create a clearDisplay function
-
-// Create add function
+function clearAll() {
+    displayBox.value = "";
+}
