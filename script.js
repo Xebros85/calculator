@@ -1,18 +1,22 @@
 // Define Global Variables
 
-const numberButtons = document.querySelectorAll("[data-number]");
-const operatorButtons = document.querySelectorAll("[data-operators]");
-const equalButton = document.querySelector("[data-equals]");
-const clearButton = document.querySelector("[clear-display]");
-const displayBox = document.getElementsByClassName("displayBox");
+let firstNumber = "";
+let secondNumber = "";
+const displayBox = document.querySelector("#display");
 
-
-function appendDisplay(input) {    
-    displayBox.value += input;
-    
-    
+function updateDisplay() {
+    displayBox.setAttribute("value", `${firstNumber}`);
 }
 
-function clearAll() {
-    displayBox.value = "";
+
+function appendDisplay(input) {
+    console.log("Input:", input)
+    firstNumber = firstNumber + input;
+    displayBox.textContent = firstNumber;
+    console.log("First Number:", firstNumber);
+}
+
+function clearAll() {    
+    firstNumber = "";
+    console.log("Cleared Display");
 }

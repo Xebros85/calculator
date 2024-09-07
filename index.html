@@ -10,30 +10,30 @@
     <h1 class="title">Simple Calculator</h1>
     <div class="container">
         <div class="calculator">
-            <div class="displayBox" id="display"></div>
+            <div id="display"></div>
             
-            <button data-="clear-display" class="double" onclick="clearAll()">AC</button>            
-            <button data-="data-operator" class="percent">%</button>
-            <button data-="data-operator" class="divide">/</button>
+            <button class="double" onclick="clearAll()">AC</button>            
+            <button class="percent">%</button>
+            <button class="divide">/</button>
 
-            <button data-="data-number" class="number" value="7" onclick="appendDisplay('7')">7</button>
-            <button data-="data-number" class="number" value="8">8</button>
-            <button data-="data-number" class="number" value="9">9</button>
-            <button data-="data-operator" class="multiply">*</button>
+            <button class="number" onclick="appendDisplay('7')">7</button>
+            <button class="number" onclick="appendDisplay('8')">8</button>
+            <button class="number" onclick="appendDisplay('9')">9</button>
+            <button class="multiply">*</button>
 
-            <button data-="data-number" class="number" value="4">4</button>
-            <button data-="data-number" class="number" value="5">5</button>
-            <button data-="data-number" class="number" value="6">6</button>
-            <button data-="data-operator" class="subtract">-</button>
+            <button class="number" onclick="appendDisplay('4')">4</button>
+            <button class="number" onclick="appendDisplay('5')">5</button>
+            <button class="number" onclick="appendDisplay('6')">6</button>
+            <button class="subtract">-</button>
 
-            <button data-="data-number" class="number" value="1">1</button>
-            <button data-="data-number" class="number" value="2">2</button>
-            <button data-="data-number" class="number" value="3">3</button>
-            <button data-="data-operator" class="add">+</button>
+            <button class="number" onclick="appendDisplay('1')">1</button>
+            <button class="number" onclick="appendDisplay('2')">2</button>
+            <button class="number" onclick="appendDisplay('3')">3</button>
+            <button class="add">+</button>
 
-            <button data-="data-number" class="double" value="0">0</button>
-            <button data-="data-number" class="number">.</button>
-            <button data-="data-equals" class="equals">=</button>
+            <button class="double" onclick="appendDisplay('0')">0</button>
+            <button class="number">.</button>
+            <button class="equals">=</button>
 
         </div>        
     </div>
