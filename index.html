@@ -10,32 +10,37 @@
     <h1 class="title">Simple Calculator</h1>
     <div class="container">
         <div class="calculator">
-            <div class="display"></div>
+            <div id="display"></div>
+            
             <button class="clear">AC</button>
             <button class="sign">+/-</button>
             <button class="percent">%</button>
             <button class="divide">/</button>
 
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
+            <button class="number" value="7" onclick="showNumber(value)">7</button>
+            <button class="number" value="8" onclick="showNumber(value)">8</button>
+            <button class="number" value="9" onclick="showNumber(value)">9</button>
             <button class="multiply">*</button>
 
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
+            <button class="number" value="4" onclick="showNumber(value)">4</button>
+            <button class="number" value="5" onclick="showNumber(value)">5</button>
+            <button class="number" value="6" onclick="showNumber(value)">6</button>
             <button class="subtract">-</button>
 
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
+            <button class="number" value="1" onclick="showNumber(value)">1</button>
+            <button class="number" value="2" onclick="showNumber(value)">2</button>
+            <button class="number" value="3" onclick="showNumber(value)">3</button>
             <button class="add">+</button>
 
-            <button class="zero">0</button>
+            <button class="zero" value="0" onclick="showNumber(value)">0</button>
             <button class="dot">.</button>
             <button class="equals">=</button>
 
-        </div>
-    </div>    
+        </div>        
+    </div>
+    <div class="footer">
+        <p>Created by Xebros - 2024</p>
+    </div>
+    <script src="script.js"></script>    
 </body>
 </html>
