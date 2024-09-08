@@ -71,11 +71,11 @@ button:hover {
     background-color: rgba(0, 128, 128, .75);
 }
 
-button.equals {
+button.operator {
     background-color: rgba(255, 165, 0, 1);
 }
 
-button.equals:hover {
+button.operator:hover {
     background-color: rgba(255, 165, 0, .75);
 }
 

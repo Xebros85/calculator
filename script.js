@@ -1,5 +1,9 @@
-// Define Global Variables
 
+// TODO: Still need to add decimal support and a delete function to delete number if user makes a mistake.
+// TODO: Add percentage sign support.
+
+
+// Define Global Variables
 let firstNumber = "";
 let secondNumber = "";
 let operator = "";
