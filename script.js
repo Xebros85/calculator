@@ -25,12 +25,13 @@ function clearAll() {
 }
 
 function appendDisplay(input) {
-    if (solved === false) {
-        checkOperator(input);
-    } else {
-        clearAll();
-        checkOperator(input);
-    }         
+    // if (solved === false) {
+    //     checkOperator(input);
+    // } else {
+    //     clearAll();
+    //     checkOperator(input);
+    // }
+    checkOperator(input);         
 }
 
 
@@ -76,7 +77,11 @@ function performCalculation() {
             result = firstNumber * secondNumber;
             break;
         case "/":
-            result = firstNumber / secondNumber            
+            if (secondNumber === 0) {
+                result = "ERROR"
+            } else {
+                result = firstNumber / secondNumber
+            }
             break;        
         default:
             break;
@@ -85,7 +90,14 @@ function performCalculation() {
 
     let newResult = result.toString();
     
-    console.log(result, typeof(result), newResult, typeof(newResult));
-    displayBox.textContent = newResult.substring(0, 9);    
+    console.log("newResult:", newResult);
+    displayBox.textContent = newResult.substring(0, 9);
+    
+    firstNumber = result;
+    console.log("FN:", firstNumber)
+    secondNumber = "";
+    operator = "";
+    operatorCheck = false;
+    
 }
 
