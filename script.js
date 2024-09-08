@@ -1,6 +1,7 @@
 
 // TODO: Still need to add decimal support and a delete function to delete number if user makes a mistake.
 // TODO: Add percentage sign support.
+// TODO: Clean up code. No need for one function to solely call another function. Can remove checkOperator function.
 
 
 // Define Global Variables
