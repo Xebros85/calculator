@@ -35,6 +35,7 @@ body {
 
 #display {
     background-color: lightpink;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     font-size: 72px;
     text-align: right;
